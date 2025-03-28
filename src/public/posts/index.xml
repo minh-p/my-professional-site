@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Posts on WhoIsHMP</title>
+    <link>http://localhost:1313/posts/</link>
+    <description>Recent content in Posts on WhoIsHMP</description>
+    <generator>Hugo -- 0.136.5</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 27 Mar 2025 21:43:00 -0700</lastBuildDate>
+    <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>My Journey Toward Productivity</title>
+      <link>http://localhost:1313/posts/my-journey-toward-productivity/</link>
+      <pubDate>Thu, 27 Mar 2025 21:43:00 -0700</pubDate>
+      <guid>http://localhost:1313/posts/my-journey-toward-productivity/</guid>
+      <description>&lt;p&gt;The main problem is despair not &amp;ldquo;consistency&amp;rdquo; nor the good &amp;lsquo;ol advice &amp;ldquo;just be self-disciplined&amp;rdquo;.&lt;/p&gt;
+&lt;p&gt;Like a thousand other people, I have grand ambitions. I won&amp;rsquo;t deny. Indeed half of my drive is motivated by greed. But the other half, which I hope will increase even more over greed is the love for work itself. After all, you can have a thousand or million other people with the same ambitions: to become wealthy, travel the world, indulge in materialism, and achieve financial freedom and independence. But what differs is the execution and taking advantage of what we are initially given in life, which leads us to the first point.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Init: First Post</title>
+      <link>http://localhost:1313/posts/init-first-post/</link>
+      <pubDate>Tue, 25 Mar 2025 21:10:00 -0700</pubDate>
+      <guid>http://localhost:1313/posts/init-first-post/</guid>
+      <description>&lt;p&gt;Hello! It&amp;rsquo;s an exciting time for me as I am graduating High School. I decided to create a professional site to write about my software projects, discuss ideas, and write about my professional and important events. Check out my &lt;a href=&#34;http://localhost:1313/about-me&#34;&gt;about me page&lt;/a&gt;!&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

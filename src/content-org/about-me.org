@@ -1,0 +1,31 @@
+#+title: About Me
+#+hugo_base_dir: ../
+#+hugo_section:
+
+My name is Vu Huy Minh Pham. I was born in Hai Phong, Vietnam on July 19th, 2007. Having received our Visa and Permanent Residence, we promptly arrived at California, U.S.A. on July 21st, 2019.
+
+[[file:avatar.jpg]]
+This image was from Newport Beach Pier 2023.
+
+* What do I do now?
+As of 2025, I am a High School senior who is graduating in May. I am an aspiring CS Major who is interested in Embedded Systems, Quantitative/Finance, and Web Development.
+* Education
+- University: I'm happy to be attending [[https://cs.ics.uci.edu/][UC Irvine]]! I'm doing Computer Science and Engineering!
+- High School: [[https://www.pacificamariners.com/][Pacifica GGUSD]]
+- Intermediate: [[https://bell.ggusd.us/][Bell GGUSD]]
+* Technical Language Fluency
+Here's a short summary of my current experience with programming and coding as of March 2025.
+** Self Learned
+In 6th grade before I came to the U.S., I began programming on Roblox with the Lua Programming Language. I got really good and freelanced myself, creating main component UIs for a /My Hero Academia/ roleplay game. I received $178 dollars for freelancing. Besides this, up until now I was trying to create a school [[https://en.wikipedia.org/wiki/Create,_read,_update_and_delete][CRUD]] [[https://en.wikipedia.org/wiki/Software_as_a_service][SaaS]] [[https://projarchive.netlify.app/home][web app]], which is still incomplete ha ha. So I learned Javascript and Python, as well as C before that for some programming fundamental.
+** High School
+Throughout my High School, I went through 3 years of the Computer Science pathway. I completed AP Computer Science Principles and AP Computer Science A. Both with a 4. AP Computer Science A taught me formally the fundamentals of Object Oriented Programming through the Java language on [[https://code.org/][Code.org]].
+* My Startup Hustle
+I want to get into tech and build companies. As [[https://projarchive.netlify.app/home][mentioned before]], for the past few years I have been working with the little time I have to research creating web apps. Right now, what I have is a notes peer-to-peer creation CRUD web app. Though yes not as impressive as a lot of other people you see on the Internet. Right now I'm learning with the time I have rather than for the blood for money.
+* Language Fluency
+I am of course fluent in Vietnamese. During my High School years, I also took Spanish. I am officially trilingual as per California Seal of Biliteracy.
+* The Things I Use to Code
+Rather than coding, I became obsessed with other things ha ha. Like Vim, and then Evil mode on Emacs. As well, I've dabbled into Linux. Right now, I'm running on my personal machine [[https://nixos.org/][NixOS]]. Here are my NixOs and Emacs dotfiles LOL:
+- [[https://github.com/minh-p/doom-emacs-config][Doom Emacs]]
+- [[https://github.com/minh-p/nixosNixOS][Dotfiles]]: including [[https://github.com/swaywm/sway][Sway]], [[https://dwm.suckless.org/][DWM]], [[https://github.com/neovim/neovim][neovim]].
+Also, I have a sweet linux setup (Sway, NixOS). Look at this:
+[[file:linux-nixos-setup-sway.png]]

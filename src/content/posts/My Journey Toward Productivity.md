@@ -5,6 +5,21 @@ tags = ["Productivity"]
 draft = false
 +++
 
+<div class="ox-hugo-toc toc">
+
+<div class="heading">Table of Contents</div>
+
+- [Being Grateful](#being-grateful)
+- [Modern Society's Rot](#modern-society-s-rot)
+- [Patience and Why "Just Be Disciplined" Is Horrible Advice](#patience-and-why-just-be-disciplined-is-horrible-advice)
+- [Warnings Against Laziness](#warnings-against-laziness)
+- [Attention Is a Limited Resource. Avoid Superficial Actions](#attention-is-a-limited-resource-dot-avoid-superficial-actions)
+- [Practical Steps Forward](#practical-steps-forward)
+- [What If I Mess Up?](#what-if-i-mess-up)
+
+</div>
+<!--endtoc-->
+
 The main problem is despair not "consistency" nor the good 'ol advice "just be self-disciplined".
 
 Like a thousand other people, I have grand ambitions. I won't deny. Indeed half of my drive is motivated by greed. But the other half, which I hope will increase even more over greed is the love for work itself. After all, you can have a thousand or million other people with the same ambitions: to become wealthy, travel the world, indulge in materialism, and achieve financial freedom and independence. But what differs is the execution and taking advantage of what we are initially given in life, which leads us to the first point.

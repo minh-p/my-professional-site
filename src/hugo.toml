@@ -33,6 +33,12 @@ weight = 40
 [markup.goldmark.renderer]
   unsafe = true
 
+[params]
+math = true
+ShowReadingTime = true
+ShowShareButtons = true
+ShowPostNavLinks = true
+
 [params.profileMode]
 enabled = true
 title = "WhoIsHMP"

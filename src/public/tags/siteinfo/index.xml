@@ -13,7 +13,7 @@
       <link>http://localhost:1313/posts/init-first-post/</link>
       <pubDate>Tue, 25 Mar 2025 21:10:00 -0700</pubDate>
       <guid>http://localhost:1313/posts/init-first-post/</guid>
-      <description>&lt;p&gt;Hello! It&amp;rsquo;s an exciting time for me as I am graduating High School. I decided to create a professional site to write about my software projects, discuss ideas, and write about my professional and important events. Check out my &lt;a href=&#34;http://localhost:1313/about-me&#34;&gt;about me page&lt;/a&gt;!&lt;/p&gt;</description>
+      <description>&lt;p&gt;Hello! It&amp;rsquo;s an exciting time for me as I am graduating High School. I decided to create a professional site to write about my software projects, discuss ideas, and write about my professional and important events. Check out my &lt;a href=&#34;http://localhost:1313/about-me/&#34;&gt;about me page&lt;/a&gt;!&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

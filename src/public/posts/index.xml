@@ -6,8 +6,25 @@
     <description>Recent content in Posts on WhoIsHMP</description>
     <generator>Hugo -- 0.136.5</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 16 Apr 2025 21:49:00 -0700</lastBuildDate>
+    <lastBuildDate>Sat, 17 May 2025 19:04:00 -0700</lastBuildDate>
     <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>C&#43;&#43; Programming: Starting with Simple DirectMedia Library (SDL 3)</title>
+      <link>http://localhost:1313/posts/c&#43;&#43;-programming-starting-with-sdl/</link>
+      <pubDate>Sat, 17 May 2025 19:04:00 -0700</pubDate>
+      <guid>http://localhost:1313/posts/c&#43;&#43;-programming-starting-with-sdl/</guid>
+      <description>&lt;div class=&#34;ox-hugo-toc toc&#34;&gt;
+&lt;div class=&#34;heading&#34;&gt;Table of Contents&lt;/div&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#motivation&#34;&gt;Motivation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#about-sdl&#34;&gt;About SDL&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#following-tutorial-and-projects&#34;&gt;Following Tutorial and Projects&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;!--endtoc--&gt;
+&lt;h2 id=&#34;motivation&#34;&gt;Motivation&lt;/h2&gt;
+&lt;p&gt;I decided to become a better programmer. I think that coding to make CRUD apps is a path to being replaceable. Plus, as I&amp;rsquo;m heading to major Computer Science and Engineering at UCI, I have decided to begin creating C++ projects that reinforce the fundamentals of fields. With my current resources, I think I can do graphics, and make a game from scratch. Once I finish messing around with &lt;a href=&#34;https://www.libsdl.org/&#34;&gt;Simple DirectMedia Layer&lt;/a&gt; (SDL), I am probably going to create a web socket.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>AP Physics II Prep</title>
       <link>http://localhost:1313/posts/my-ap-physics-ii-prep-2024/</link>
@@ -72,7 +89,7 @@ I think I should attend the review session this weekend and just do a mock exam.
       <link>http://localhost:1313/posts/init-first-post/</link>
       <pubDate>Tue, 25 Mar 2025 21:10:00 -0700</pubDate>
       <guid>http://localhost:1313/posts/init-first-post/</guid>
-      <description>&lt;p&gt;Hello! It&amp;rsquo;s an exciting time for me as I am graduating High School. I decided to create a professional site to write about my software projects, discuss ideas, and write about my professional and important events. Check out my &lt;a href=&#34;http://localhost:1313/about-me&#34;&gt;about me page&lt;/a&gt;!&lt;/p&gt;</description>
+      <description>&lt;p&gt;Hello! It&amp;rsquo;s an exciting time for me as I am graduating High School. I decided to create a professional site to write about my software projects, discuss ideas, and write about my professional and important events. Check out my &lt;a href=&#34;http://localhost:1313/about-me/&#34;&gt;about me page&lt;/a&gt;!&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

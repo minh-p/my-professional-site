@@ -38,6 +38,7 @@ math = true
 ShowReadingTime = true
 ShowShareButtons = true
 ShowPostNavLinks = true
+author = ["Vu Huy Minh Pham"]
 
 [params.profileMode]
 enabled = true

@@ -11,7 +11,7 @@ This image was from Newport Beach Pier 2023.
 
 ## What do I do now? {#what-do-i-do-now}
 
-As of 2025, I am a High School senior who is graduating in May. I am an aspiring CS Major who is interested in Embedded Systems, Quantitative/Finance, and Web Development.
+As of 2025, I am a High School senior who is graduating in May. I am an aspiring CS Major who is interested in Embedded Systems, Quantitative/Finance, and Game/Web Development.
 
 
 ## Education {#education}
@@ -26,19 +26,20 @@ As of 2025, I am a High School senior who is graduating in May. I am an aspiring
 Here's a short summary of my current experience with programming and coding as of March 2025.
 
 
+### Right Now {#right-now}
+
+I'm currently learning C/C++. [C++ Programming: Starting with Simple DirectMedia Library (SDL 3)]({{< relref "C++ Programming Starting with SDL" >}})
+
+
 ### Self Learned {#self-learned}
 
-In 6th grade before I came to the U.S., I began programming on Roblox with the Lua Programming Language. I got really good and freelanced myself, creating main component UIs for a _My Hero Academia_ roleplay game. I received $178 dollars for freelancing. Besides this, up until now I was trying to create a school [CRUD](https://en.wikipedia.org/wiki/Create,_read,_update_and_delete) [SaaS](https://en.wikipedia.org/wiki/Software_as_a_service) [web app](https://projarchive.netlify.app/home), which is still incomplete ha ha. So I learned Javascript and Python, as well as C before that for some programming fundamental.
+I have experience in Lua, Python, and Javascript.
+In 6th grade before I came to the U.S., I began programming on Roblox with the Lua Programming Language. I got really good and freelanced myself, creating main component UIs for a _My Hero Academia_ roleplay game. I received $178 dollars for freelancing. Besides this, up until now I was trying to create a school [CRUD](https://en.wikipedia.org/wiki/Create,_read,_update_and_delete) [SaaS](https://en.wikipedia.org/wiki/Software_as_a_service) [web app](https://projarchive.netlify.app/home), this project ultimately was put on a hold as I lacked interest and saw that time is better invested to learn lower level programming and fundamentals.
 
 
 ### High School {#high-school}
 
 Throughout my High School, I went through 3 years of the Computer Science pathway. I completed AP Computer Science Principles and AP Computer Science A. Both with a 4. AP Computer Science A taught me formally the fundamentals of Object Oriented Programming through the Java language on [Code.org](https://code.org/).
-
-
-## My Startup Hustle {#my-startup-hustle}
-
-I want to get into tech and build companies. As [mentioned before](https://projarchive.netlify.app/home), for the past few years I have been working with the little time I have to research creating web apps. Right now, what I have is a notes peer-to-peer creation CRUD web app. Though yes not as impressive as a lot of other people you see on the Internet. Right now I'm learning with the time I have rather than for the blood for money.
 
 
 ## Language Fluency {#language-fluency}

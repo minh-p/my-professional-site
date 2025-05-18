@@ -1,6 +1,24 @@
 #+title: All Posts
 
 #+hugo_base_dir: ../
+* DONE C++ Programming: Starting with Simple DirectMedia Library (SDL 3) :@Graphics:SDL:
+CLOSED: [2025-05-17 Sat 19:04]
+:PROPERTIES:
+:EXPORT_FILE_NAME: C++ Programming Starting with SDL
+:EXPORT_OPTIONS: toc:2
+:ID:       97396bb7-c965-4377-9758-6bc26274c530
+:END:
+:LOGBOOK:
+- State "DONE"       from              [2025-05-17 Sat 19:04]
+:END:
+** Motivation
+I decided to become a better programmer. I think that coding to make CRUD apps is a path to being replaceable. Plus, as I'm heading to major Computer Science and Engineering at UCI, I have decided to begin creating C++ projects that reinforce the fundamentals of fields. With my current resources, I think I can do graphics, and make a game from scratch. Once I finish messing around with [[https://www.libsdl.org/][Simple DirectMedia Layer]] (SDL), I am probably going to create a web socket.
+** About SDL
+SDL is a cross-platform development library for graphical application that needs low level access to hardware. It is used as a library for several game engines and therefore for many games. I also heard that SDL is known for being a layer of abstraction so that I won't have to mess with specific lower level graphics API such as vulkan or d3d11. SDL is a library to make cross platform computer graphics application. As well, learning to use this library means knowing the fundamentals of computer graphics.
+I proceed to dive head first into the documentation, which I realize I have no idea what I am looking at: A series of C functions organized into categories that I can't put together and don't understand. Indeed, purely looking at documentation is only possible when you're used to the documentation have well established a basic understanding of what the library do and the underlying concepts around it. Luckily, being a popular library, there are tutorials. I decide to take things slow to become competent. Right now, I am nothing. I am worthless.
+** Following Tutorial and Projects
+I've made [[https://github.com/minh-p/SDLTrial][SDLTrial]], my GitHub repository to learn C/C++ tooling and as well the SDL library. I hope that this will build my resume and of course help anyone who's also learning the SDL library as well. As of the moment of creating this post, I have succesfully completed "Hello World", or showing a triangle on screen! Check out [[https://github.com/minh-p/SDLTrial/tree/main/Triangle][Triangle]].
+As well, I am using [[https://nixos.org/][NixOS]]. The repository features setting development and compilation up the nix way with [[https://github.com/minh-p/SDLTrial/blob/main/Triangle/default.nix][default.nix]] and [[https://github.com/minh-p/SDLTrial/blob/main/flake.nix][flake.nix]] alongside [[https://github.com/minh-p/SDLTrial/blob/main/Triangle/CMakeLists.txt][CMake]].
 
 * DONE AP Physics II Prep :Physics:@Academics:
 CLOSED: [2025-04-16 Wed 21:49]
@@ -12,6 +30,8 @@ CLOSED: [2025-04-16 Wed 21:49]
 :LOGBOOK:
 - State "DONE"       from "TODO"       [2025-04-16 Wed 21:49]
 :END:
+** Update
+Yeah, I got lazy. I realized that the AP Physics II exam is not that hard. It's time to focus on programming LOL.
 ** Overview
 There are 7 units in this course.
 
@@ -104,7 +124,7 @@ The solution is pretty simple. It is to minimize digital footprint. It is time t
 ** What If I Mess Up?
 Again, it is what I said about despair. Instead of being and not doing anything, you should attempt self-troubleshoot. Perhaps the reason you did not do any work today is and mostly always because of your dopamine level be sky high due to social and video media consumption and the lack of sleep. Take rest early today and don't look at useless stuff tomorrow. As always, if you know your life is going to require a high standard, such as a high paying job. Maybe take a step back and be honest to your boss. Ask for another opportunity. But most likely, you haven't even gotten that job or doing properly your own business anyways. So, focus on learning, improving, and self-optimizing.
 
-* DONE Init: First Post                                             :SiteInfo:@LifeEvents:
+* DONE Init: First Post                                             :SiteInfo:
 CLOSED: [2025-03-25 Tue 21:10]
 :PROPERTIES:
 :EXPORT_FILE_NAME: Init: First Post
@@ -115,4 +135,4 @@ CLOSED: [2025-03-25 Tue 21:10]
 - State "DONE"       from "BACKLOG"    [2025-03-25 Tue 20:12]
 - State "DONE"       from "NEXT"       [2025-03-25 Tue 20:12]
 :END:
-Hello! It's an exciting time for me as I am graduating High School. I decided to create a professional site to write about my software projects, discuss ideas, and write about my professional and important events. Check out my [[/about-me][about me page]]!
+Hello! It's an exciting time for me as I am graduating High School. I decided to create a professional site to write about my software projects, discuss ideas, and write about my professional and important events. Check out my [[./about-me.org][about me page]]!

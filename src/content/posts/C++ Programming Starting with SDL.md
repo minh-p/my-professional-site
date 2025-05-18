@@ -20,7 +20,7 @@ draft = false
 
 ## Motivation {#motivation}
 
-I decided to become a better programmer. I think that coding to make CRUD apps is a path to being replaceable. Plus, as I'm heading to major Computer Science and Engineering at UCI, I have decided to begin creating C++ projects that reinforce the fundamentals of fields. With my current resources, I think I can do graphics, and make a game from scratch. Once I finish messing around with [Simple DirectMedia Layer](https://www.libsdl.org/) (SDL), I am probably going to create a web socket.
+I decided to become a better programmer. I think that coding to make CRUD apps is a path to being replaceable. Plus, as I'm heading to major Computer Science and Engineering at UCI, I have decided to begin creating C++ projects that reinforce the fundamentals of programming fields. With my current resources, I think I can do graphics, and make a game from scratch. Once I finish messing around with [Simple DirectMedia Layer](https://www.libsdl.org/) (SDL), I am probably going to create a web socket.
 
 
 ## About SDL {#about-sdl}

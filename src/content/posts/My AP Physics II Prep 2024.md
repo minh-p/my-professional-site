@@ -10,6 +10,7 @@ draft = false
 
 <div class="heading">Table of Contents</div>
 
+- [Update](#update)
 - [Overview](#overview)
 - [Resources I Have](#resources-i-have)
 - [Schedules](#schedules)
@@ -19,6 +20,11 @@ draft = false
 
 </div>
 <!--endtoc-->
+
+
+## Update {#update}
+
+Yeah, I got lazy. I realized that the AP Physics II exam is not that hard. It's time to focus on programming LOL.
 
 
 ## Overview {#overview}

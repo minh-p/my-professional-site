@@ -29,7 +29,7 @@ NIX_BINTOOLS='/nix/store/1mv8pj4nxwnd9bbxshljc9p4cnl3rakj-binutils-wrapper-2.43.
 export NIX_BINTOOLS
 NIX_BINTOOLS_WRAPPER_TARGET_HOST_x86_64_unknown_linux_gnu='1'
 export NIX_BINTOOLS_WRAPPER_TARGET_HOST_x86_64_unknown_linux_gnu
-NIX_BUILD_CORES='4'
+NIX_BUILD_CORES='12'
 export NIX_BUILD_CORES
 NIX_CC='/nix/store/gnd8f9h2ycxrfrvrga508c4n9cxy6720-gcc-wrapper-13.3.0'
 export NIX_CC
@@ -41,7 +41,7 @@ NIX_ENFORCE_NO_NATIVE='1'
 export NIX_ENFORCE_NO_NATIVE
 NIX_HARDENING_ENABLE='bindnow format fortify fortify3 pic relro stackprotector strictoverflow zerocallusedregs'
 export NIX_HARDENING_ENABLE
-NIX_LDFLAGS='-rpath /home/hmp/WebServer/my-professional-site/outputs/out/lib '
+NIX_LDFLAGS='-rpath /home/hmp/Projects/hugo-projects/my-professional-site/outputs/out/lib '
 export NIX_LDFLAGS
 NIX_NO_SELF_RPATH='1'
 NIX_STORE='/nix/store'
@@ -134,7 +134,7 @@ name='nix-shell-env'
 export name
 nativeBuildInputs=''
 export nativeBuildInputs
-out='/home/hmp/WebServer/my-professional-site/outputs/out'
+out='/home/hmp/Projects/hugo-projects/my-professional-site/outputs/out'
 export out
 outputBin='out'
 outputDev='out'
@@ -165,7 +165,7 @@ preConfigurePhases=' updateAutotoolsGnuConfigScriptsPhase'
 declare -a preFixupHooks=('_moveToShare' '_multioutDocs' '_multioutDevs' )
 preferLocalBuild='1'
 export preferLocalBuild
-prefix='/home/hmp/WebServer/my-professional-site/outputs/out'
+prefix='/home/hmp/Projects/hugo-projects/my-professional-site/outputs/out'
 declare -a propagatedBuildDepFiles=('propagated-build-build-deps' 'propagated-native-build-inputs' 'propagated-build-target-deps' )
 propagatedBuildInputs=''
 export propagatedBuildInputs

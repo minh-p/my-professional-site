@@ -1,49 +1,110 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>WhoIsHMP</title><link>https://vhmp.dev/</link><description>Recent content on WhoIsHMP</description><generator>Hugo -- 0.136.5</generator><language>en-us</language><lastBuildDate>Sat, 17 May 2025 19:04:00 -0700</lastBuildDate><atom:link href="https://vhmp.dev/index.xml" rel="self" type="application/rss+xml"/><item><title>C++ Programming: Starting with Simple DirectMedia Library (SDL 3)</title><link>https://vhmp.dev/posts/c++-programming-starting-with-sdl/</link><pubDate>Sat, 17 May 2025 19:04:00 -0700</pubDate><guid>https://vhmp.dev/posts/c++-programming-starting-with-sdl/</guid><description>&lt;div class="ox-hugo-toc toc">
-&lt;div class="heading">Table of Contents&lt;/div>
-&lt;ul>
-&lt;li>&lt;a href="#motivation">Motivation&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#about-sdl">About SDL&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#following-tutorial-and-projects">Following Tutorial and Projects&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;/div>
-&lt;!--endtoc-->
-&lt;h2 id="motivation">Motivation&lt;/h2>
-&lt;p>I decided to become a better programmer. I think that coding to make CRUD apps is a path to being replaceable. Plus, as I&amp;rsquo;m heading to major Computer Science and Engineering at UCI, I have decided to begin creating C++ projects that reinforce the fundamentals of programming fields. With my current resources, I think I can do graphics, and make a game from scratch. Once I finish messing around with &lt;a href="https://www.libsdl.org/">Simple DirectMedia Layer&lt;/a> (SDL), I am probably going to create a web socket.&lt;/p></description></item><item><title>AP Physics II Prep</title><link>https://vhmp.dev/posts/my-ap-physics-ii-prep-2024/</link><pubDate>Wed, 16 Apr 2025 21:49:00 -0700</pubDate><guid>https://vhmp.dev/posts/my-ap-physics-ii-prep-2024/</guid><description>&lt;div class="ox-hugo-toc toc">
-&lt;div class="heading">Table of Contents&lt;/div>
-&lt;ul>
-&lt;li>&lt;a href="#update">Update&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#overview">Overview&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#resources-i-have">Resources I Have&lt;/a>&lt;/li>
-&lt;li>&lt;a href="#schedules">Schedules&lt;/a>
-&lt;ul>
-&lt;li>&lt;a href="#april-16th-2025">April 16th, 2025&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>&lt;a href="#units">Units&lt;/a>
-&lt;ul>
-&lt;li>&lt;a href="#unit-12-magnetism-and-electromagnetism">Unit 12: Magnetism and Electromagnetism&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ul>
-&lt;/div>
-&lt;!--endtoc-->
-&lt;h2 id="update">Update&lt;/h2>
-&lt;p>Yeah, I got lazy. I realized that the AP Physics II exam is not that hard. It&amp;rsquo;s time to focus on programming LOL.&lt;/p>
-&lt;h2 id="overview">Overview&lt;/h2>
-&lt;p>There are 7 units in this course.&lt;/p>
-&lt;ol>
-&lt;li>&lt;input disabled="" type="checkbox"> Unit 9: Thermodynamics&lt;/li>
-&lt;li>&lt;input disabled="" type="checkbox"> Unit 10: Electric Force, Field, and Potential&lt;/li>
-&lt;li>&lt;input disabled="" type="checkbox"> Unit 11: Electric Circuits&lt;/li>
-&lt;li>&lt;input checked="" disabled="" type="checkbox"> Unit 12: Magnetism and Electromagnetism&lt;/li>
-&lt;li>&lt;input disabled="" type="checkbox"> Unit 13: Geometric Optics&lt;/li>
-&lt;li>&lt;input disabled="" type="checkbox"> Unit 14: Waves, Sound, and Physical Optics&lt;/li>
-&lt;li>&lt;input disabled="" type="checkbox"> Unit 15: Modern Physics&lt;/li>
-&lt;/ol>
-&lt;h2 id="resources-i-have">Resources I Have&lt;/h2>
-&lt;p>For individual units, I have the Albert practice, of which I will probably redo the topic that I miss the most on the practice exam.
-I think I should attend the review session this weekend and just do a mock exam.&lt;/p></description></item><item><title>Init: First Post</title><link>https://vhmp.dev/posts/init-first-post/</link><pubDate>Tue, 25 Mar 2025 21:10:00 -0700</pubDate><guid>https://vhmp.dev/posts/init-first-post/</guid><description>&lt;p>Hello! It&amp;rsquo;s an exciting time for me as I am graduating High School. I decided to create a professional site to write about my software projects, discuss ideas, and write about my professional and important events. Check out my &lt;a href="https://vhmp.dev/about-me/">about me page&lt;/a>!&lt;/p></description></item><item><title>About Me</title><link>https://vhmp.dev/about-me/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vhmp.dev/about-me/</guid><description>&lt;p>My name is Vu Huy Minh Pham. I was born in Hai Phong, Vietnam on July 19th, 2007. Having received our Visa and Permanent Residence, we promptly arrived at California, U.S.A. on July 21st, 2019.&lt;/p>
-&lt;p>&lt;img loading="lazy" src="https://vhmp.dev/ox-hugo/avatar.jpg">
-This image was from Newport Beach Pier 2023.&lt;/p>
-&lt;h2 id="what-do-i-do-now">What do I do now?&lt;/h2>
-&lt;p>As of 2025, I am a High School senior who is graduating in May. I am an aspiring CS Major who is interested in Embedded Systems, Quantitative/Finance, and Game/Web Development.&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>WhoIsHMP</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent content on WhoIsHMP</description>
+    <generator>Hugo -- 0.136.5</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 14 Dec 2025 10:19:00 -0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Roblox Non-Layered Grid-Based Server Sharding</title>
+      <link>http://localhost:1313/posts/roblox-grid-based-server-sharding-with-instancing/</link>
+      <pubDate>Sun, 14 Dec 2025 10:19:00 -0800</pubDate>
+      <guid>http://localhost:1313/posts/roblox-grid-based-server-sharding-with-instancing/</guid>
+      <description>&lt;div class=&#34;ox-hugo-toc toc&#34;&gt;
+&lt;div class=&#34;heading&#34;&gt;Table of Contents&lt;/div&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#motivation--quick-bio-story&#34;&gt;Motivation (Quick Bio-Story)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#what-is-server-sharding&#34;&gt;What is Server Sharding?&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#let-s-clarify-our-terms-borrowing-foxhole-s&#34;&gt;Let&amp;rsquo;s Clarify Our Terms, Borrowing Foxhole&amp;rsquo;s&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#what-kind-of-game-can-you-make-on-roblox-with-grid-based-server-sharding&#34;&gt;What Kind of Game Can You Make on Roblox with Grid-Based Server Sharding?&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#technical-implementation&#34;&gt;Technical Implementation&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;!--endtoc--&gt;
+&lt;h2 id=&#34;motivation--quick-bio-story&#34;&gt;Motivation (Quick Bio-Story)&lt;/h2&gt;
+&lt;p&gt;I finally got my first part-time job (first ever) which is at &lt;em&gt;The Coder School&lt;/em&gt;&amp;rsquo;s Irvine location. My specialization as put on my resume would be coaching young students Roblox Scripting. It has been a while since I have done anything Roblox related (for more than 3 years). While I was away from Roblox, I developed much as a programmer because I learned general programming concepts, developing a web app, interacting with database, and now simultaneously trying to learn about microcontrollers because I want to touch embedded systems in the future. In the intermission between my first and second quarter at UC Irvine, I decided I wanted to implement a feature in Roblox, which would wash away the Roblox&amp;rsquo;s rust so that I am able to fulfill my job well with ease. Beyond, that, I have a great idea for a Roblox game based on my favorite game on Roblox, Empire Clash.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>C&#43;&#43; Programming: Starting with Simple DirectMedia Library (SDL 3)</title>
+      <link>http://localhost:1313/posts/c&#43;&#43;-programming-starting-with-sdl/</link>
+      <pubDate>Sat, 17 May 2025 19:04:00 -0700</pubDate>
+      <guid>http://localhost:1313/posts/c&#43;&#43;-programming-starting-with-sdl/</guid>
+      <description>&lt;div class=&#34;ox-hugo-toc toc&#34;&gt;
+&lt;div class=&#34;heading&#34;&gt;Table of Contents&lt;/div&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#motivation&#34;&gt;Motivation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#about-sdl&#34;&gt;About SDL&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#following-tutorial-and-projects&#34;&gt;Following Tutorial and Projects&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;!--endtoc--&gt;
+&lt;h2 id=&#34;motivation&#34;&gt;Motivation&lt;/h2&gt;
+&lt;p&gt;I decided to become a better programmer. I think that coding to make CRUD apps is a path to being replaceable. Plus, as I&amp;rsquo;m heading to major Computer Science and Engineering at UCI, I have decided to begin creating C++ projects that reinforce the fundamentals of programming fields. With my current resources, I think I can do graphics, and make a game from scratch. Once I finish messing around with &lt;a href=&#34;https://www.libsdl.org/&#34;&gt;Simple DirectMedia Layer&lt;/a&gt; (SDL), I am probably going to create a web socket.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>AP Physics II Prep</title>
+      <link>http://localhost:1313/posts/my-ap-physics-ii-prep-2024/</link>
+      <pubDate>Wed, 16 Apr 2025 21:49:00 -0700</pubDate>
+      <guid>http://localhost:1313/posts/my-ap-physics-ii-prep-2024/</guid>
+      <description>&lt;div class=&#34;ox-hugo-toc toc&#34;&gt;
+&lt;div class=&#34;heading&#34;&gt;Table of Contents&lt;/div&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#update&#34;&gt;Update&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#overview&#34;&gt;Overview&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#resources-i-have&#34;&gt;Resources I Have&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#schedules&#34;&gt;Schedules&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#april-16th-2025&#34;&gt;April 16th, 2025&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#units&#34;&gt;Units&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#unit-12-magnetism-and-electromagnetism&#34;&gt;Unit 12: Magnetism and Electromagnetism&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;!--endtoc--&gt;
+&lt;h2 id=&#34;update&#34;&gt;Update&lt;/h2&gt;
+&lt;p&gt;Yeah, I got lazy. I realized that the AP Physics II exam is not that hard. It&amp;rsquo;s time to focus on programming LOL.&lt;/p&gt;
+&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;
+&lt;p&gt;There are 7 units in this course.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Unit 9: Thermodynamics&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Unit 10: Electric Force, Field, and Potential&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Unit 11: Electric Circuits&lt;/li&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Unit 12: Magnetism and Electromagnetism&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Unit 13: Geometric Optics&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Unit 14: Waves, Sound, and Physical Optics&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Unit 15: Modern Physics&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;resources-i-have&#34;&gt;Resources I Have&lt;/h2&gt;
+&lt;p&gt;For individual units, I have the Albert practice, of which I will probably redo the topic that I miss the most on the practice exam.
+I think I should attend the review session this weekend and just do a mock exam.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Init: First Post</title>
+      <link>http://localhost:1313/posts/init-first-post/</link>
+      <pubDate>Tue, 25 Mar 2025 21:10:00 -0700</pubDate>
+      <guid>http://localhost:1313/posts/init-first-post/</guid>
+      <description>&lt;p&gt;Hello! It&amp;rsquo;s an exciting time for me as I am graduating High School. I decided to create a professional site to write about my software projects, discuss ideas, and write about my professional and important events. Check out my &lt;a href=&#34;http://localhost:1313/about-me/&#34;&gt;about me page&lt;/a&gt;!&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>About Me</title>
+      <link>http://localhost:1313/about-me/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/about-me/</guid>
+      <description>&lt;p&gt;My name is Vu Huy Minh Pham. I was born in Hai Phong, Vietnam on July 19th, 2007. Having received our Visa and Permanent Residence, we promptly arrived at California, U.S.A. on July 21st, 2019.&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/ox-hugo/avatar.jpg&#34;&gt;
+This image was from Newport Beach Pier 2023.&lt;/p&gt;
+&lt;h2 id=&#34;what-do-i-do-now&#34;&gt;What do I do now?&lt;/h2&gt;
+&lt;p&gt;As of 2025, I am a High School senior who is graduating in May. I am an aspiring CS Major who is interested in Embedded Systems, Quantitative/Finance, and Game/Web Development.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

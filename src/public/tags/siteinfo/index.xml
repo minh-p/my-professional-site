@@ -1,1 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>SiteInfo on WhoIsHMP</title><link>https://vhmp.dev/tags/siteinfo/</link><description>Recent content in SiteInfo on WhoIsHMP</description><generator>Hugo -- 0.136.5</generator><language>en-us</language><lastBuildDate>Tue, 25 Mar 2025 21:10:00 -0700</lastBuildDate><atom:link href="https://vhmp.dev/tags/siteinfo/index.xml" rel="self" type="application/rss+xml"/><item><title>Init: First Post</title><link>https://vhmp.dev/posts/init-first-post/</link><pubDate>Tue, 25 Mar 2025 21:10:00 -0700</pubDate><guid>https://vhmp.dev/posts/init-first-post/</guid><description>&lt;p>Hello! It&amp;rsquo;s an exciting time for me as I am graduating High School. I decided to create a professional site to write about my software projects, discuss ideas, and write about my professional and important events. Check out my &lt;a href="https://vhmp.dev/about-me/">about me page&lt;/a>!&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>SiteInfo on WhoIsHMP</title>
+    <link>http://localhost:1313/tags/siteinfo/</link>
+    <description>Recent content in SiteInfo on WhoIsHMP</description>
+    <generator>Hugo -- 0.136.5</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 25 Mar 2025 21:10:00 -0700</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/siteinfo/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Init: First Post</title>
+      <link>http://localhost:1313/posts/init-first-post/</link>
+      <pubDate>Tue, 25 Mar 2025 21:10:00 -0700</pubDate>
+      <guid>http://localhost:1313/posts/init-first-post/</guid>
+      <description>&lt;p&gt;Hello! It&amp;rsquo;s an exciting time for me as I am graduating High School. I decided to create a professional site to write about my software projects, discuss ideas, and write about my professional and important events. Check out my &lt;a href=&#34;http://localhost:1313/about-me/&#34;&gt;about me page&lt;/a&gt;!&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

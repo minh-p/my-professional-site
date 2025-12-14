@@ -26,7 +26,8 @@
 &lt;li&gt;&lt;a href=&#34;#technical-implementation&#34;&gt;Technical Implementation&lt;/a&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;#roblox-api&#34;&gt;Roblox API&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#world-and-regions-architecture-v-dot-1&#34;&gt;World and Regions Architecture V.1&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#basic-world-and-grids-model&#34;&gt;Basic World and Grids Model&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#region-spawning&#34;&gt;Region Spawning&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;

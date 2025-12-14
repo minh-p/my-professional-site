@@ -1,77 +1,45 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
-  <channel>
-    <title>Posts on WhoIsHMP</title>
-    <link>http://localhost:1313/posts/</link>
-    <description>Recent content in Posts on WhoIsHMP</description>
-    <generator>Hugo -- 0.136.5</generator>
-    <language>en-us</language>
-    <lastBuildDate>Sat, 17 May 2025 19:04:00 -0700</lastBuildDate>
-    <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>C&#43;&#43; Programming: Starting with Simple DirectMedia Library (SDL 3)</title>
-      <link>http://localhost:1313/posts/c&#43;&#43;-programming-starting-with-sdl/</link>
-      <pubDate>Sat, 17 May 2025 19:04:00 -0700</pubDate>
-      <guid>http://localhost:1313/posts/c&#43;&#43;-programming-starting-with-sdl/</guid>
-      <description>&lt;div class=&#34;ox-hugo-toc toc&#34;&gt;
-&lt;div class=&#34;heading&#34;&gt;Table of Contents&lt;/div&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;#motivation&#34;&gt;Motivation&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#about-sdl&#34;&gt;About SDL&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#following-tutorial-and-projects&#34;&gt;Following Tutorial and Projects&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;!--endtoc--&gt;
-&lt;h2 id=&#34;motivation&#34;&gt;Motivation&lt;/h2&gt;
-&lt;p&gt;I decided to become a better programmer. I think that coding to make CRUD apps is a path to being replaceable. Plus, as I&amp;rsquo;m heading to major Computer Science and Engineering at UCI, I have decided to begin creating C++ projects that reinforce the fundamentals of programming fields. With my current resources, I think I can do graphics, and make a game from scratch. Once I finish messing around with &lt;a href=&#34;https://www.libsdl.org/&#34;&gt;Simple DirectMedia Layer&lt;/a&gt; (SDL), I am probably going to create a web socket.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>AP Physics II Prep</title>
-      <link>http://localhost:1313/posts/my-ap-physics-ii-prep-2024/</link>
-      <pubDate>Wed, 16 Apr 2025 21:49:00 -0700</pubDate>
-      <guid>http://localhost:1313/posts/my-ap-physics-ii-prep-2024/</guid>
-      <description>&lt;div class=&#34;ox-hugo-toc toc&#34;&gt;
-&lt;div class=&#34;heading&#34;&gt;Table of Contents&lt;/div&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;#update&#34;&gt;Update&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#overview&#34;&gt;Overview&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#resources-i-have&#34;&gt;Resources I Have&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#schedules&#34;&gt;Schedules&lt;/a&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;#april-16th-2025&#34;&gt;April 16th, 2025&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#units&#34;&gt;Units&lt;/a&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;#unit-12-magnetism-and-electromagnetism&#34;&gt;Unit 12: Magnetism and Electromagnetism&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;!--endtoc--&gt;
-&lt;h2 id=&#34;update&#34;&gt;Update&lt;/h2&gt;
-&lt;p&gt;Yeah, I got lazy. I realized that the AP Physics II exam is not that hard. It&amp;rsquo;s time to focus on programming LOL.&lt;/p&gt;
-&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;
-&lt;p&gt;There are 7 units in this course.&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Unit 9: Thermodynamics&lt;/li&gt;
-&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Unit 10: Electric Force, Field, and Potential&lt;/li&gt;
-&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Unit 11: Electric Circuits&lt;/li&gt;
-&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Unit 12: Magnetism and Electromagnetism&lt;/li&gt;
-&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Unit 13: Geometric Optics&lt;/li&gt;
-&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Unit 14: Waves, Sound, and Physical Optics&lt;/li&gt;
-&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Unit 15: Modern Physics&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h2 id=&#34;resources-i-have&#34;&gt;Resources I Have&lt;/h2&gt;
-&lt;p&gt;For individual units, I have the Albert practice, of which I will probably redo the topic that I miss the most on the practice exam.
-I think I should attend the review session this weekend and just do a mock exam.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Init: First Post</title>
-      <link>http://localhost:1313/posts/init-first-post/</link>
-      <pubDate>Tue, 25 Mar 2025 21:10:00 -0700</pubDate>
-      <guid>http://localhost:1313/posts/init-first-post/</guid>
-      <description>&lt;p&gt;Hello! It&amp;rsquo;s an exciting time for me as I am graduating High School. I decided to create a professional site to write about my software projects, discuss ideas, and write about my professional and important events. Check out my &lt;a href=&#34;http://localhost:1313/about-me/&#34;&gt;about me page&lt;/a&gt;!&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Posts on WhoIsHMP</title><link>https://vhmp.dev/posts/</link><description>Recent content in Posts on WhoIsHMP</description><generator>Hugo -- 0.136.5</generator><language>en-us</language><lastBuildDate>Sat, 17 May 2025 19:04:00 -0700</lastBuildDate><atom:link href="https://vhmp.dev/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>C++ Programming: Starting with Simple DirectMedia Library (SDL 3)</title><link>https://vhmp.dev/posts/c++-programming-starting-with-sdl/</link><pubDate>Sat, 17 May 2025 19:04:00 -0700</pubDate><guid>https://vhmp.dev/posts/c++-programming-starting-with-sdl/</guid><description>&lt;div class="ox-hugo-toc toc">
+&lt;div class="heading">Table of Contents&lt;/div>
+&lt;ul>
+&lt;li>&lt;a href="#motivation">Motivation&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#about-sdl">About SDL&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#following-tutorial-and-projects">Following Tutorial and Projects&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/div>
+&lt;!--endtoc-->
+&lt;h2 id="motivation">Motivation&lt;/h2>
+&lt;p>I decided to become a better programmer. I think that coding to make CRUD apps is a path to being replaceable. Plus, as I&amp;rsquo;m heading to major Computer Science and Engineering at UCI, I have decided to begin creating C++ projects that reinforce the fundamentals of programming fields. With my current resources, I think I can do graphics, and make a game from scratch. Once I finish messing around with &lt;a href="https://www.libsdl.org/">Simple DirectMedia Layer&lt;/a> (SDL), I am probably going to create a web socket.&lt;/p></description></item><item><title>AP Physics II Prep</title><link>https://vhmp.dev/posts/my-ap-physics-ii-prep-2024/</link><pubDate>Wed, 16 Apr 2025 21:49:00 -0700</pubDate><guid>https://vhmp.dev/posts/my-ap-physics-ii-prep-2024/</guid><description>&lt;div class="ox-hugo-toc toc">
+&lt;div class="heading">Table of Contents&lt;/div>
+&lt;ul>
+&lt;li>&lt;a href="#update">Update&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#overview">Overview&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#resources-i-have">Resources I Have&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#schedules">Schedules&lt;/a>
+&lt;ul>
+&lt;li>&lt;a href="#april-16th-2025">April 16th, 2025&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;a href="#units">Units&lt;/a>
+&lt;ul>
+&lt;li>&lt;a href="#unit-12-magnetism-and-electromagnetism">Unit 12: Magnetism and Electromagnetism&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/div>
+&lt;!--endtoc-->
+&lt;h2 id="update">Update&lt;/h2>
+&lt;p>Yeah, I got lazy. I realized that the AP Physics II exam is not that hard. It&amp;rsquo;s time to focus on programming LOL.&lt;/p>
+&lt;h2 id="overview">Overview&lt;/h2>
+&lt;p>There are 7 units in this course.&lt;/p>
+&lt;ol>
+&lt;li>&lt;input disabled="" type="checkbox"> Unit 9: Thermodynamics&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> Unit 10: Electric Force, Field, and Potential&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> Unit 11: Electric Circuits&lt;/li>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> Unit 12: Magnetism and Electromagnetism&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> Unit 13: Geometric Optics&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> Unit 14: Waves, Sound, and Physical Optics&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> Unit 15: Modern Physics&lt;/li>
+&lt;/ol>
+&lt;h2 id="resources-i-have">Resources I Have&lt;/h2>
+&lt;p>For individual units, I have the Albert practice, of which I will probably redo the topic that I miss the most on the practice exam.
+I think I should attend the review session this weekend and just do a mock exam.&lt;/p></description></item><item><title>Init: First Post</title><link>https://vhmp.dev/posts/init-first-post/</link><pubDate>Tue, 25 Mar 2025 21:10:00 -0700</pubDate><guid>https://vhmp.dev/posts/init-first-post/</guid><description>&lt;p>Hello! It&amp;rsquo;s an exciting time for me as I am graduating High School. I decided to create a professional site to write about my software projects, discuss ideas, and write about my professional and important events. Check out my &lt;a href="https://vhmp.dev/about-me/">about me page&lt;/a>!&lt;/p></description></item></channel></rss>

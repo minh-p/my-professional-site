@@ -13,6 +13,9 @@ draft = false
     - [Let's Clarify Our Terms, Borrowing Foxhole's](#let-s-clarify-our-terms-borrowing-foxhole-s)
 - [What Kind of Game Can You Make on Roblox with Grid-Based Server Sharding?](#what-kind-of-game-can-you-make-on-roblox-with-grid-based-server-sharding)
 - [Technical Implementation](#technical-implementation)
+    - [Roblox API](#roblox-api)
+    - [Basic World and Grids Model](#basic-world-and-grids-model)
+    - [Region Spawning](#region-spawning)
 
 </div>
 <!--endtoc-->
@@ -33,7 +36,9 @@ Note that even though Foxhole's has designated region zones, they are not instan
 ### Let's Clarify Our Terms, Borrowing Foxhole's {#let-s-clarify-our-terms-borrowing-foxhole-s}
 
 -   We'll designate a collection of server regions as "World"
--   Each server region is one instanced server
+-   Each grid is one instanced server.
+
+&rarr; Every word has grids.
 
 
 ## What Kind of Game Can You Make on Roblox with Grid-Based Server Sharding? {#what-kind-of-game-can-you-make-on-roblox-with-grid-based-server-sharding}
@@ -49,4 +54,43 @@ Notwithstanding, instead of adding a new map and only then implement the core me
 
 ## Technical Implementation {#technical-implementation}
 
-This heading entry is still in-progress! Come back later.
+That was all talk, let's get to doing.
+
+
+### Roblox API {#roblox-api}
+
+First, let us see what the Roblox Engine offers. Because we are going to be using multiple servers, [TeleportService](https://create.roblox.com/docs/reference/engine/classes/TeleportService) has to be used. Furthermore, the nature of Roblox servers do not allow us to keep a server running for more than a week. Therefore, state must be preserved. To do that, we have to use [DataStoreService](https://create.roblox.com/docs/reference/engine/classes/DataStoreService). Persistent state has to store the grid position of the server, as well as storing the server's state later down the line (e.g. objects/landmarks placed down by players later).
+
+
+### Basic World and Grids Model {#basic-world-and-grids-model}
+
+This model assumes that the grids share the same place / code, only differeing in procedural generation and data saved. Physically, of course the World does not exist in the game, it is merely a conceptual classifier for a collection of regions with necessary properties stored. As for the regions they will have several properties needed to be stored in the data store.
+
+{{< figure src="/ox-hugo/architecturev1.png" >}}
+
+Note that each region have to be soft-capped, which means that if the server cap is 100, the region should be capped to 85 so that routers are not hard stopped by Roblox constraints.
+
+
+#### Terms {#terms}
+
+<!--list-separator-->
+
+-  Keys
+
+    PK means Primary Key, FK means Foreign Key.
+
+<!--list-separator-->
+
+-  Server Status indications:
+
+    1.  active &rarr; safe to route player here
+    2.  full &rarr; don't route new players
+    3.  draining &rarr; server is preparing to shut down / migrate. allow exits, avoid new joins.
+    4.  idle &rarr; data exists but no server running &rarr; needs to start new one when a player walk to grid.
+
+
+### Region Spawning {#region-spawning}
+
+What if two players approach a new region grid? What if they create two different places? This is a classic race condition issue.
+
+This entry is still in progress. Come back later!

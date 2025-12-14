@@ -19,7 +19,8 @@ As a distributed server architecture, server sharding is splitting one logical g
 Note that even though Foxhole's has designated region zones, they are not instanced. State is shared across one grid. State is saved in a database solution.
 *** Let's Clarify Our Terms, Borrowing Foxhole's
 - We'll designate a collection of server regions as "World"
-- Each server region is one instanced server
+- Each grid is one instanced server.
+\to Every word has grids.
 ** What Kind of Game Can You Make on Roblox with Grid-Based Server Sharding?
 Imagine a procedurally generated game based on rules and assets made by the developer. The players are allowed more freedom but at the same time they can feel their worlds linked together. Their collective actions have consequences on the collective victory. This is game where players can build facilities in order to achieve their collective objective, and with things to build that means resource management, and implementation of economy or system of labor and resources.
 
@@ -29,7 +30,53 @@ My original idea for a game that utilizes region server sharding is derived from
 
 Notwithstanding, instead of adding a new map and only then implement the core mechanics change, make the core mechanics change good so that it contributes to the player's environment and hence dictating the player's behavior, not the other way around. The environment does not dictate the player's behavior as strongly as the core mechanics while implementing new environments take much more resources and time. CFrontInteractive (Empire clash's development studio) is doing a good job given budget and time constraint but the game's core mechanics is still not refined because of the attention on the new map. Anyways, the main point is to consider procedurally generated environment given resource constraint and to focus on core mechanics instead. Providing a dynamic environment for players can be achieved through server sharding + procedural generation like that of FoxHole's exemplary model.
 ** Technical Implementation
-This heading entry is still in-progress! Come back later.
+That was all talk, let's get to doing.
+*** Roblox API
+First, let us see what the Roblox Engine offers. Because we are going to be using multiple servers, [[https://create.roblox.com/docs/reference/engine/classes/TeleportService][TeleportService]] has to be used. Furthermore, the nature of Roblox servers do not allow us to keep a server running for more than a week. Therefore, state must be preserved. To do that, we have to use [[https://create.roblox.com/docs/reference/engine/classes/DataStoreService][DataStoreService]]. Persistent state has to store the grid position of the server, as well as storing the server's state later down the line (e.g. objects/landmarks placed down by players later).
+*** Basic World and Grids Model
+This model assumes that the grids share the same place / code, only differeing in procedural generation and data saved. Physically, of course the World does not exist in the game, it is merely a conceptual classifier for a collection of regions with necessary properties stored. As for the regions they will have several properties needed to be stored in the data store.
+#+BEGIN_SRC mermaid :file architecturev1.png :theme dark :background-color black
+erDiagram
+  WORLD ||--o{ GRID : contains
+
+  WORLD {
+    string worldId PK
+    string name
+    int maxPlayers
+    int maxGrids
+    string version
+  }
+
+  GRID {
+    string gridId PK
+    string worldId FK
+    int gx        "grid X coordinate"
+    int gy        "grid Y coordinate"
+    int size      "world units covered"
+    string placeId
+    string jobId  "active server (optional)"
+    int softCapPlayers
+    string status "idle|active|full|draining"
+  }
+#+END_SRC
+
+#+RESULTS:
+[[file:architecturev1.png]]
+
+Note that each region have to be soft-capped, which means that if the server cap is 100, the region should be capped to 85 so that routers are not hard stopped by Roblox constraints.
+**** Terms
+***** Keys
+PK means Primary Key, FK means Foreign Key.
+***** Server Status indications:
+1. active \to safe to route player here
+2. full \to don't route new players
+3. draining \to server is preparing to shut down / migrate. allow exits, avoid new joins.
+4. idle \to data exists but no server running \to needs to start new one when a player walk to grid.
+*** Region Spawning
+What if two players approach a new region grid? What if they create two different places? This is a classic race condition issue.
+
+This entry is still in progress. Come back later!
+
 * DONE C++ Programming: Starting with Simple DirectMedia Library (SDL 3) :@Graphics:SDL:
 CLOSED: [2025-05-17 Sat 19:04]
 :PROPERTIES:

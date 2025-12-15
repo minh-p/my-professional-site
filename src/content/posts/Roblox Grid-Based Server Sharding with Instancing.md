@@ -109,7 +109,7 @@ This is where we get to implement world and region model. Here is a task list:
 
 1.  [ ] DataStore &rarr; setup persisent values like worldID, gridID, gx, gy. These values shouldn't be updated regularly.
 2.  [ ] MemoryStore &rarr; Region locking (preliminary setup)
-3.  [ ] Implement region crossing math, get q and r in axial coordinates.
+3.  [X] Implement region crossing math, get q and r in axial coordinates.
 4.  [ ] From one region, make it so when the user goes to a certain bound approaching another grid, they ask to teleport and/or create that new grid.
 5.  [ ] Pass the player's position put them at the position most sensible in the new region.
 

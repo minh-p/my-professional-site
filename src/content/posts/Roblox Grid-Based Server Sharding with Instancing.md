@@ -58,6 +58,7 @@ Notwithstanding, instead of adding a new map and only then implement the core me
 ## Technical Implementation {#technical-implementation}
 
 That was all talk, let's get to doing.
+<https://github.com/minh-p/roblox-grid-based-server-sharding>
 
 
 ### Roblox API {#roblox-api}

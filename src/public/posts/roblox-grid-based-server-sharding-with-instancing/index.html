@@ -21,12 +21,14 @@ Technical Implementation
 
 Roblox API
 Basic World and Grids Model
-Region Spawning
+Data Store vs Memory Store
+Region
 
 
 
 
 
+Note: Post is In-Progress
 Motivation (Quick Bio-Story)
 I finally got my first part-time job (first ever) which is at The Coder School&rsquo;s Irvine location. My specialization as put on my resume would be coaching young students Roblox Scripting. It has been a while since I have done anything Roblox related (for more than 3 years). While I was away from Roblox, I developed much as a programmer because I learned general programming concepts, developing a web app, interacting with database, and now simultaneously trying to learn about microcontrollers because I want to touch embedded systems in the future. In the intermission between my first and second quarter at UC Irvine, I decided I wanted to implement a feature in Roblox, which would wash away the Roblox&rsquo;s rust so that I am able to fulfill my job well with ease. Beyond, that, I have a great idea for a Roblox game based on my favorite game on Roblox, Empire Clash.">
 <meta name="author" content="Vu Huy Minh Pham">
@@ -171,7 +173,7 @@ I finally got my first part-time job (first ever) which is at The Coder School&r
     <h1 class="post-title entry-hint-parent">
       Roblox Non-Layered Grid-Based Server Sharding
     </h1>
-    <div class="post-meta"><span title='2025-12-14 10:19:00 -0800 PST'>December 14, 2025</span>&nbsp;·&nbsp;5 min&nbsp;·&nbsp;Vu Huy Minh Pham
+    <div class="post-meta"><span title='2025-12-14 10:19:00 -0800 PST'>December 14, 2025</span>&nbsp;·&nbsp;8 min&nbsp;·&nbsp;Vu Huy Minh Pham
 
 </div>
   </header> 
@@ -189,12 +191,14 @@ I finally got my first part-time job (first ever) which is at The Coder School&r
 <ul>
 <li><a href="#roblox-api">Roblox API</a></li>
 <li><a href="#basic-world-and-grids-model">Basic World and Grids Model</a></li>
-<li><a href="#region-spawning">Region Spawning</a></li>
+<li><a href="#data-store-vs-memory-store">Data Store vs Memory Store</a></li>
+<li><a href="#region">Region</a></li>
 </ul>
 </li>
 </ul>
 </div>
 <!--endtoc-->
+<p>Note: Post is In-Progress</p>
 <h2 id="motivation--quick-bio-story">Motivation (Quick Bio-Story)<a hidden class="anchor" aria-hidden="true" href="#motivation--quick-bio-story">#</a></h2>
 <p>I finally got my first part-time job (first ever) which is at <em>The Coder School</em>&rsquo;s Irvine location. My specialization as put on my resume would be coaching young students Roblox Scripting. It has been a while since I have done anything Roblox related (for more than 3 years). While I was away from Roblox, I developed much as a programmer because I learned general programming concepts, developing a web app, interacting with database, and now simultaneously trying to learn about microcontrollers because I want to touch embedded systems in the future. In the intermission between my first and second quarter at UC Irvine, I decided I wanted to implement a feature in Roblox, which would wash away the Roblox&rsquo;s rust so that I am able to fulfill my job well with ease. Beyond, that, I have a great idea for a Roblox game based on my favorite game on Roblox, Empire Clash.</p>
 <h2 id="what-is-server-sharding">What is Server Sharding?<a hidden class="anchor" aria-hidden="true" href="#what-is-server-sharding">#</a></h2>
@@ -218,7 +222,7 @@ Note that even though Foxhole&rsquo;s has designated region zones, they are not 
 <h2 id="technical-implementation">Technical Implementation<a hidden class="anchor" aria-hidden="true" href="#technical-implementation">#</a></h2>
 <p>That was all talk, let&rsquo;s get to doing.</p>
 <h3 id="roblox-api">Roblox API<a hidden class="anchor" aria-hidden="true" href="#roblox-api">#</a></h3>
-<p>First, let us see what the Roblox Engine offers. Because we are going to be using multiple servers, <a href="https://create.roblox.com/docs/reference/engine/classes/TeleportService">TeleportService</a> has to be used. Furthermore, the nature of Roblox servers do not allow us to keep a server running for more than a week. Therefore, state must be preserved. To do that, we have to use <a href="https://create.roblox.com/docs/reference/engine/classes/DataStoreService">DataStoreService</a>. Persistent state has to store the grid position of the server, as well as storing the server&rsquo;s state later down the line (e.g. objects/landmarks placed down by players later).</p>
+<p>First, let us see what the Roblox Engine offers. Because we are going to be using multiple servers, <a href="https://create.roblox.com/docs/reference/engine/classes/TeleportService">TeleportService</a> has to be used. Furthermore, the nature of Roblox servers do not allow us to keep a server running for more than a week. Therefore, state must be preserved. To do that, we have to use <a href="https://create.roblox.com/docs/reference/engine/classes/DataStoreService">DataStoreService</a> for storing the server&rsquo;s state later down the line (e.g. objects/landmarks placed down by players later). Alongside DataStoreService, <a href="https://create.roblox.com/docs/cloud-services/memory-stores">MemoryStoreService</a> should also be used for cross server operations like storing grids as well as caching while the server is still running.</p>
 <h3 id="basic-world-and-grids-model">Basic World and Grids Model<a hidden class="anchor" aria-hidden="true" href="#basic-world-and-grids-model">#</a></h3>
 <p>This model assumes that the grids share the same place / code, only differeing in procedural generation and data saved. Physically, of course the World does not exist in the game, it is merely a conceptual classifier for a collection of regions with necessary properties stored. As for the regions they will have several properties needed to be stored in the data store.</p>
 <figure>
@@ -246,9 +250,120 @@ Note that even though Foxhole&rsquo;s has designated region zones, they are not 
 </ol>
 </li>
 </ul>
-<h3 id="region-spawning">Region Spawning<a hidden class="anchor" aria-hidden="true" href="#region-spawning">#</a></h3>
-<p>What if two players approach a new region grid? What if they create two different places? This is a classic race condition issue.</p>
-<p>This entry is still in progress. Come back later!</p>
+<h3 id="data-store-vs-memory-store">Data Store vs Memory Store<a hidden class="anchor" aria-hidden="true" href="#data-store-vs-memory-store">#</a></h3>
+<p>Data Store should only be updated very sparingly. Memory Store is used as caching for cross-server operations. They&rsquo;ll be used according to the design. So let&rsquo;s get started.</p>
+<h3 id="region">Region<a hidden class="anchor" aria-hidden="true" href="#region">#</a></h3>
+<p>What if two players approach a new region grid? What if they create two different places? This is a classic race condition issue. Well, in MemoryStore, we could create a sorted map to store regions that are locked.</p>
+<h4 id="task-list">Task List<a hidden class="anchor" aria-hidden="true" href="#task-list">#</a></h4>
+<p>This is where we get to implement world and region model. Here is a task list:</p>
+<ol>
+<li><input disabled="" type="checkbox"> DataStore → setup persisent values like worldID, gridID, gx, gy. These values shouldn&rsquo;t be updated regularly.</li>
+<li><input disabled="" type="checkbox"> MemoryStore → Region locking (preliminary setup)</li>
+<li><input disabled="" type="checkbox"> Implement region crossing math, get q and r in axial coordinates.</li>
+<li><input disabled="" type="checkbox"> From one region, make it so when the user goes to a certain bound approaching another grid, they ask to teleport and/or create that new grid.</li>
+<li><input disabled="" type="checkbox"> Pass the player&rsquo;s position put them at the position most sensible in the new region.</li>
+</ol>
+<h4 id="geometry">Geometry<a hidden class="anchor" aria-hidden="true" href="#geometry">#</a></h4>
+<p>This project will implement the hexagonal system that FoxHole has.</p>
+<ul>
+<li>q axis goes ↘ / ↖</li>
+<li>r axis goes ↙ / ↗</li>
+</ul>
+<p>Hence these the hexagon&rsquo;s neighbors:</p>
+<pre tabindex="0"><code class="language-nil" data-lang="nil">(q+1, r)
+(q+1, r-1)
+(q,   r-1)
+(q-1, r)
+(q-1, r+1)
+(q,   r+1)
+</code></pre><p>We are using the Axial Coordinates system to organize the different server regions:
+<img loading="lazy" src="/ox-hugo/hex-axial-coordinate-system.png">
+Knowing what region the player has crossed to will be a problem to be solved.</p>
+<h4 id="the-math-for-region-crossing">The Math for Region Crossing<a hidden class="anchor" aria-hidden="true" href="#the-math-for-region-crossing">#</a></h4>
+<p>Goal: We want to know whether the player has passed to another region or not (and hence they should be teleported). And as well for routing, we need to know the direction of crossing.</p>
+<p>Thankfully, a lot of this math can be generated by AI. Here are the steps I learned from prompt engineering:</p>
+<!--list-separator-->
+<ul>
+<li>
+<p>Step 1</p>
+<p>Converting player world position to fractional axis.</p>
+<p>Let \(s\) be the radius of each hexagonal grid.</p>
+<p>\(q_f = \frac{\sqrt{3}}{3} \frac{x}{s} - \frac{1}{3} \frac{z}{s}\)</p>
+<p>\(r_f = \frac{2}{3} \frac{z}{s}\)</p>
+</li>
+</ul>
+<!--list-separator-->
+<ul>
+<li>
+<p>Step 2</p>
+<p>Fractional axis → Fractional cube
+\(x_f = q_f\)</p>
+<p>\(z_f = r_f\)</p>
+<p>\(y_f = -x_f - z_f\)</p>
+<p>Such that: \(x_f + y_f + z_f = 0\)</p>
+</li>
+</ul>
+<!--list-separator-->
+<ul>
+<li>
+<p>Step 3</p>
+ <!--list-separator-->
+<ul>
+<li>
+<p>Cube rounding and constraint enforcing</p>
+<p>\(r_x = round(x_f)\),
+\(r_y = round(y_f)\),
+\(r_z = round(z_f)\)</p>
+</li>
+</ul>
+ <!--list-separator-->
+<ul>
+<li>
+<p>Our errors:</p>
+<p>\(d_x = |r_x - x_f|\),
+\(d_y = |r_y - y_f|\),
+\(d_z = |r_z - y_z|\)</p>
+</li>
+</ul>
+ <!--list-separator-->
+<ul>
+<li>
+<p>Constraint enforcement</p>
+<ul>
+<li>If \(d_x &gt; d_y\) and \(d_x &gt; d_z\): \(r_x = -r_y - r_z\)</li>
+<li>Else if \(d_y &gt; d_x\) and \(d_y &gt; d_z\): \(r_y = -r_x - r_z\)</li>
+<li>Else: \(r_z = -r_x - r_y\)</li>
+<li>This enforces the constraint: \(r_x + r_y + r_z = 0\)</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<!--list-separator-->
+<ul>
+<li>
+<p>Step 4</p>
+<p>Cube → Axial
+We&rsquo;ll just drop the hidden axis:
+\(q = r_x\)
+\(r = r_z\)</p>
+</li>
+</ul>
+<!--list-separator-->
+<ul>
+<li>
+<p>Region Crossing Check</p>
+<p>Let world&rsquo;s region be \((0, 0)\).
+Player entered a new region if the one axial coordinate component from step 4 does not match 0.</p>
+</li>
+</ul>
+<!--list-separator-->
+<ul>
+<li>
+<p>Neighbor Delta</p>
+<p>The neighbor delta is the axial coordinate returned from step 4. Add neighbor delta to the current world&rsquo;s gridX, gridY and we&rsquo;ll get the new grid.</p>
+</li>
+</ul>
 
 
   </div>

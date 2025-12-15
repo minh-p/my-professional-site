@@ -11,6 +11,7 @@ CLOSED: [2025-12-14 Sun 10:19]
 :LOGBOOK:
 - State "DONE"       from "TODO"       [2025-12-14 Sun 10:19]
 :END:
+Note: Post is In-Progress
 ** Motivation (Quick Bio-Story)
 I finally got my first part-time job (first ever) which is at /The Coder School/'s Irvine location. My specialization as put on my resume would be coaching young students Roblox Scripting. It has been a while since I have done anything Roblox related (for more than 3 years). While I was away from Roblox, I developed much as a programmer because I learned general programming concepts, developing a web app, interacting with database, and now simultaneously trying to learn about microcontrollers because I want to touch embedded systems in the future. In the intermission between my first and second quarter at UC Irvine, I decided I wanted to implement a feature in Roblox, which would wash away the Roblox's rust so that I am able to fulfill my job well with ease. Beyond, that, I have a great idea for a Roblox game based on my favorite game on Roblox, Empire Clash.
 ** What is Server Sharding?
@@ -32,7 +33,7 @@ Notwithstanding, instead of adding a new map and only then implement the core me
 ** Technical Implementation
 That was all talk, let's get to doing.
 *** Roblox API
-First, let us see what the Roblox Engine offers. Because we are going to be using multiple servers, [[https://create.roblox.com/docs/reference/engine/classes/TeleportService][TeleportService]] has to be used. Furthermore, the nature of Roblox servers do not allow us to keep a server running for more than a week. Therefore, state must be preserved. To do that, we have to use [[https://create.roblox.com/docs/reference/engine/classes/DataStoreService][DataStoreService]]. Persistent state has to store the grid position of the server, as well as storing the server's state later down the line (e.g. objects/landmarks placed down by players later).
+First, let us see what the Roblox Engine offers. Because we are going to be using multiple servers, [[https://create.roblox.com/docs/reference/engine/classes/TeleportService][TeleportService]] has to be used. Furthermore, the nature of Roblox servers do not allow us to keep a server running for more than a week. Therefore, state must be preserved. To do that, we have to use [[https://create.roblox.com/docs/reference/engine/classes/DataStoreService][DataStoreService]] for storing the server's state later down the line (e.g. objects/landmarks placed down by players later). Alongside DataStoreService, [[https://create.roblox.com/docs/cloud-services/memory-stores][MemoryStoreService]] should also be used for cross server operations like storing grids as well as caching while the server is still running.
 *** Basic World and Grids Model
 This model assumes that the grids share the same place / code, only differeing in procedural generation and data saved. Physically, of course the World does not exist in the game, it is merely a conceptual classifier for a collection of regions with necessary properties stored. As for the regions they will have several properties needed to be stored in the data store.
 #+BEGIN_SRC mermaid :file architecturev1.png :theme dark :background-color black
@@ -42,20 +43,16 @@ erDiagram
   WORLD {
     string worldId PK
     string name
-    int maxPlayers
     int maxGrids
-    string version
+    int seedGen
   }
 
   GRID {
     string gridId PK
     string worldId FK
-    int gx        "grid X coordinate"
-    int gy        "grid Y coordinate"
-    int size      "world units covered"
+    int g        "diagonal hex axis"
+    int r        "anti-diagonal hex axis"
     string placeId
-    string jobId  "active server (optional)"
-    int softCapPlayers
     string status "idle|active|full|draining"
   }
 #+END_SRC
@@ -72,10 +69,78 @@ PK means Primary Key, FK means Foreign Key.
 2. full \to don't route new players
 3. draining \to server is preparing to shut down / migrate. allow exits, avoid new joins.
 4. idle \to data exists but no server running \to needs to start new one when a player walk to grid.
-*** Region Spawning
-What if two players approach a new region grid? What if they create two different places? This is a classic race condition issue.
+*** Data Store vs Memory Store
+Data Store should only be updated very sparingly. Memory Store is used as caching for cross-server operations. They'll be used according to the design. So let's get started.
+*** Region
+What if two players approach a new region grid? What if they create two different places? This is a classic race condition issue. Well, in MemoryStore, we could create a sorted map to store regions that are locked.
+**** Task List
+This is where we get to implement world and region model. Here is a task list:
+1. [ ] DataStore \to setup persisent values like worldID, gridID, gx, gy. These values shouldn't be updated regularly.
+2. [ ] MemoryStore \to Region locking (preliminary setup)
+3. [ ] Implement region crossing math, get q and r in axial coordinates.
+4. [ ] From one region, make it so when the user goes to a certain bound approaching another grid, they ask to teleport and/or create that new grid.
+5. [ ] Pass the player's position put them at the position most sensible in the new region.
+**** Geometry
+This project will implement the hexagonal system that FoxHole has.
+- q axis goes ↘ / ↖
+- r axis goes ↙ / ↗
+Hence these the hexagon's neighbors:
+#+BEGIN_SRC
+(q+1, r)
+(q+1, r-1)
+(q,   r-1)
+(q-1, r)
+(q-1, r+1)
+(q,   r+1)
+#+END_SRC
+We are using the Axial Coordinates system to organize the different server regions:
+[[file:hex-axial-coordinate-system.png]]
+Knowing what region the player has crossed to will be a problem to be solved.
+**** The Math for Region Crossing
+Goal: We want to know whether the player has passed to another region or not (and hence they should be teleported). And as well for routing, we need to know the direction of crossing.
 
-This entry is still in progress. Come back later!
+Thankfully, a lot of this math can be generated by AI. Here are the steps I learned from prompt engineering:
+***** Step 1
+Converting player world position to fractional axis.
+
+Let \(s\) be the radius of each hexagonal grid.
+
+\(q_f = \frac{\sqrt{3}}{3} \frac{x}{s} - \frac{1}{3} \frac{z}{s}\)
+
+\(r_f = \frac{2}{3} \frac{z}{s}\)
+***** Step 2
+Fractional axis \to Fractional cube
+\(x_f = q_f\)
+
+\(z_f = r_f\)
+
+\(y_f = -x_f - z_f\)
+
+Such that: \(x_f + y_f + z_f = 0\)
+***** Step 3
+****** Cube rounding and constraint enforcing
+\(r_x = round(x_f)\),
+\(r_y = round(y_f)\), 
+\(r_z = round(z_f)\)
+****** Our errors:
+\(d_x = |r_x - x_f|\),
+\(d_y = |r_y - y_f|\),
+\(d_z = |r_z - y_z|\)
+****** Constraint enforcement
+- If \(d_x > d_y\) and \(d_x > d_z\): \(r_x = -r_y - r_z\)
+- Else if \(d_y > d_x\) and \(d_y > d_z\): \(r_y = -r_x - r_z\)
+- Else: \(r_z = -r_x - r_y\)
+- This enforces the constraint: \(r_x + r_y + r_z = 0\)
+***** Step 4
+Cube \to Axial
+We'll just drop the hidden axis:
+\(q = r_x\)
+\(r = r_z\)
+***** Region Crossing Check
+Let world's region be \((0, 0)\).
+Player entered a new region if the one axial coordinate component from step 4 does not match 0.
+***** Neighbor Delta 
+The neighbor delta is the axial coordinate returned from step 4. Add neighbor delta to the current world's gridX, gridY and we'll get the new grid.
 
 * DONE C++ Programming: Starting with Simple DirectMedia Library (SDL 3) :@Graphics:SDL:
 CLOSED: [2025-05-17 Sat 19:04]

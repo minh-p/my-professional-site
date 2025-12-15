@@ -27,12 +27,14 @@
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;#roblox-api&#34;&gt;Roblox API&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;#basic-world-and-grids-model&#34;&gt;Basic World and Grids Model&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#region-spawning&#34;&gt;Region Spawning&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#data-store-vs-memory-store&#34;&gt;Data Store vs Memory Store&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#region&#34;&gt;Region&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
 &lt;!--endtoc--&gt;
+&lt;p&gt;Note: Post is In-Progress&lt;/p&gt;
 &lt;h2 id=&#34;motivation--quick-bio-story&#34;&gt;Motivation (Quick Bio-Story)&lt;/h2&gt;
 &lt;p&gt;I finally got my first part-time job (first ever) which is at &lt;em&gt;The Coder School&lt;/em&gt;&amp;rsquo;s Irvine location. My specialization as put on my resume would be coaching young students Roblox Scripting. It has been a while since I have done anything Roblox related (for more than 3 years). While I was away from Roblox, I developed much as a programmer because I learned general programming concepts, developing a web app, interacting with database, and now simultaneously trying to learn about microcontrollers because I want to touch embedded systems in the future. In the intermission between my first and second quarter at UC Irvine, I decided I wanted to implement a feature in Roblox, which would wash away the Roblox&amp;rsquo;s rust so that I am able to fulfill my job well with ease. Beyond, that, I have a great idea for a Roblox game based on my favorite game on Roblox, Empire Clash.&lt;/p&gt;</description>
     </item>

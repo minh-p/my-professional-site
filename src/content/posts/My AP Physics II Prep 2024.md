@@ -59,7 +59,7 @@ I think I should attend the review session this weekend and just do a mock exam.
 
 ### Unit 12: Magnetism and Electromagnetism {#unit-12-magnetism-and-electromagnetism}
 
--   Albert: [#4 Electromagnetism Albert]({{< relref "../../../../../org-roam/20250322093904-4_electromagnetism_albert.md" >}})
+-   Albert #4 Electromagnetism
 
 
 #### Core Concepts {#core-concepts}

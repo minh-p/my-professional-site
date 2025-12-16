@@ -142,6 +142,12 @@ Let world's region be \((0, 0)\).
 Player entered a new region if the one axial coordinate component from step 4 does not match 0.
 ***** Neighbor Delta 
 The neighbor delta is the axial coordinate returned from step 4. Add neighbor delta to the current world's gridX, gridY and we'll get the new grid.
+**** Region Crossing Math [[https://github.com/minh-p/roblox-grid-based-server-sharding/blob/main/src/server/Region/RegionManager.luau][Implemented]]
+#+begin_export html
+<iframe width="430" height="184"
+  src="https://www.youtube.com/embed/CHjXKyDa788">
+</iframe> 
+#+end_export
 
 * DONE C++ Programming: Starting with Simple DirectMedia Library (SDL 3) :@Graphics:SDL:
 CLOSED: [2025-05-17 Sat 19:04]
@@ -192,7 +198,7 @@ I think I should attend the review session this weekend and just do a mock exam.
 - I am reviewing Electromagnetism by going over the Course and Exam Descriptions 2024.
 ** Units
 *** Unit 12: Magnetism and Electromagnetism
-- Albert: [[id:12052f78-ede1-4b21-a953-77aefb7ae037][#4 Electromagnetism Albert]]
+- Albert #4 Electromagnetism
 **** Core Concepts
 - Relationships between moving charges, the magnetic fields they generate, and the magnetic forces that act on other moving charges in those fields.
 - Students are to explain the steps that lead from the equation, law, or physical principle to the justification of their claim on the FRQ.

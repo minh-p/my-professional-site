@@ -260,7 +260,7 @@ Note that even though Foxhole&rsquo;s has designated region zones, they are not 
 <ol>
 <li><input disabled="" type="checkbox"> DataStore → setup persisent values like worldID, gridID, gx, gy. These values shouldn&rsquo;t be updated regularly.</li>
 <li><input disabled="" type="checkbox"> MemoryStore → Region locking (preliminary setup)</li>
-<li><input disabled="" type="checkbox"> Implement region crossing math, get q and r in axial coordinates.</li>
+<li><input checked="" disabled="" type="checkbox"> Implement region crossing math, get q and r in axial coordinates.</li>
 <li><input disabled="" type="checkbox"> From one region, make it so when the user goes to a certain bound approaching another grid, they ask to teleport and/or create that new grid.</li>
 <li><input disabled="" type="checkbox"> Pass the player&rsquo;s position put them at the position most sensible in the new region.</li>
 </ol>
@@ -365,6 +365,10 @@ Player entered a new region if the one axial coordinate component from step 4 do
 <p>The neighbor delta is the axial coordinate returned from step 4. Add neighbor delta to the current world&rsquo;s gridX, gridY and we&rsquo;ll get the new grid.</p>
 </li>
 </ul>
+<h4 id="region-crossing-math-implemented">Region Crossing Math <a href="https://github.com/minh-p/roblox-grid-based-server-sharding/blob/main/src/server/Region/RegionManager.luau">Implemented</a><a hidden class="anchor" aria-hidden="true" href="#region-crossing-math-implemented">#</a></h4>
+<iframe width="430" height="184"
+  src="https://www.youtube.com/embed/CHjXKyDa788">
+</iframe>
 
 
   </div>

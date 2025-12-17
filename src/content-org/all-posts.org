@@ -184,17 +184,12 @@ Implementation, CFrame formula is:
 
 Codified, we need to serialize and pass in the position, the lookAt vector of the previous shard, and the enterDir (hex-edge direction index from 0-5):
 #+BEGIN_SRC
-(+1,0)→0
-
-(+1,−1)→1
-
-(0,−1)→2
-
-(−1,0)→3
-
-(−1,+1)→4
-
-(0,+1)→5
+enterDir = 0  →  (dr, dq) = ( 0, +1)
+enterDir = 1  →  (dr, dq) = (-1, +1)
+enterDir = 2  →  (dr, dq) = (-1,  0)
+enterDir = 3  →  (dr, dq) = ( 0, -1)
+enterDir = 4  →  (dr, dq) = (+1, -1)
+enterDir = 5  →  (dr, dq) = (+1,  0)
 #+END_SRC
 
 #+BEGIN_SRC lua

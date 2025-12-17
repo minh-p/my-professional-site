@@ -417,17 +417,12 @@ From the first math excursion, we already have:</p>
 </li>
 </ul>
 <p>Codified, we need to serialize and pass in the position, the lookAt vector of the previous shard, and the enterDir (hex-edge direction index from 0-5):</p>
-<pre tabindex="0"><code class="language-nil" data-lang="nil">(+1,0)→0
-
-(+1,−1)→1
-
-(0,−1)→2
-
-(−1,0)→3
-
-(−1,+1)→4
-
-(0,+1)→5
+<pre tabindex="0"><code class="language-nil" data-lang="nil">enterDir = 0  →  (dr, dq) = ( 0, +1)
+enterDir = 1  →  (dr, dq) = (-1, +1)
+enterDir = 2  →  (dr, dq) = (-1,  0)
+enterDir = 3  →  (dr, dq) = ( 0, -1)
+enterDir = 4  →  (dr, dq) = (+1, -1)
+enterDir = 5  →  (dr, dq) = (+1,  0)
 </code></pre><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-lua" data-lang="lua"><span style="display:flex;"><span><span style="color:#66d9ef">local</span> cf <span style="color:#f92672">=</span> CFrame.lookAt(position, position <span style="color:#f92672">+</span> lookVector)
 </span></span><span style="display:flex;"><span>cf <span style="color:#f92672">*=</span> CFrame.Angles(<span style="color:#ae81ff">0</span>, teleportData.enterDir <span style="color:#f92672">*</span> math.pi<span style="color:#f92672">/</span><span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">0</span>)
 </span></span><span style="display:flex;"><span>hrp.CFrame <span style="color:#f92672">=</span> cf

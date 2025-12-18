@@ -161,7 +161,8 @@ The hex axial coordinate of the player relative to the snapped hex axial coordin
 Hence, our final derived formula is:
 - \(x_{new} = s\sqrt{3} (\Delta{}q + \frac{\Delta{}r}{2})\)
 - \(z_{new} = s \frac{3}{2}\Delta{}r\)
-**** The Math for Region Crossing - Player's Orientation In New Shard
+**** The Math for Region Crossing - Player's Orientation In New Shard (LEFT UNFINISHED)
+\to *Don't implement this*. I've moved to another interest. This does not work!
 Roblox already has
 #+BEGIN_SRC lua
 x.CFrame.LookVector

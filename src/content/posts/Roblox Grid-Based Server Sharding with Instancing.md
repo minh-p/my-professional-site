@@ -251,8 +251,9 @@ Hence, our final derived formula is:
 -   \\(z\_{new} = s \frac{3}{2}\Delta{}r\\)
 
 
-#### The Math for Region Crossing - Player's Orientation In New Shard {#the-math-for-region-crossing-player-s-orientation-in-new-shard}
+#### The Math for Region Crossing - Player's Orientation In New Shard (LEFT UNFINISHED) {#the-math-for-region-crossing-player-s-orientation-in-new-shard--left-unfinished}
 
+&rarr; **Don't implement this**. I've moved to another interest. This does not work!
 Roblox already has
 
 ```lua

@@ -20,7 +20,8 @@
 &lt;/ul&gt;
 &lt;/div&gt;
 &lt;!--endtoc--&gt;
-&lt;p&gt;This is a blog post to document my learning and implementation of Procedurally generated terrain into my Roblox game. As well, specifically how I combine it with grid sharding. Right now the post is a commitment to learning stuff.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Project Status: Abandoned&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;One day, if I have time, I&amp;rsquo;ll create a game. But it&amp;rsquo;s time to learn other stuff for my embedded systems career.&lt;/p&gt;
 &lt;p&gt;Procedural terrain generation is a way to implement a dynamic player environment alongside &lt;a href=&#34;http://localhost:1313/posts/roblox-grid-based-server-sharding-with-instancing/&#34;&gt;Grid-based server sharding&lt;/a&gt;. In this blog, I am going to showcase some of the math behind procedural generation as I also work on my &lt;a href=&#34;https://www.roblox.com/games/9588998913/Empire-Clash&#34;&gt;Roblox Empire&lt;/a&gt; Clash clone game.&lt;/p&gt;</description>
     </item>
     <item>

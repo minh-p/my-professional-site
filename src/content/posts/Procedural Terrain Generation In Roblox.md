@@ -13,7 +13,9 @@ draft = false
 </div>
 <!--endtoc-->
 
-This is a blog post to document my learning and implementation of Procedurally generated terrain into my Roblox game. As well, specifically how I combine it with grid sharding. Right now the post is a commitment to learning stuff.
+**Project Status: Abandoned**
+
+One day, if I have time, I'll create a game. But it's time to learn other stuff for my embedded systems career.
 
 Procedural terrain generation is a way to implement a dynamic player environment alongside [Grid-based server sharding]({{< relref "Roblox Grid-Based Server Sharding with Instancing" >}}). In this blog, I am going to showcase some of the math behind procedural generation as I also work on my [Roblox Empire](https://www.roblox.com/games/9588998913/Empire-Clash) Clash clone game.
 
@@ -29,5 +31,4 @@ Here are some of the resources I've gotten regarding terrain procedural generati
 -   [Roblox Implementation Guide](https://devforum.roblox.com/t/ultimate-perlin-noise-and-how-to-make-procedural-terrain-guide-24231-characters-detailed/3109400) - Roblox developer forum post by LxckyDev.
 -   [Sebastian Lague's Procedural Landmass Generation Tutorial](https://www.youtube.com/watch?v=wbpMiKiSKm8&list=PLFt_AvWsXl0eBW2EiBtl_sxmDtSgZBxB3) - Conceptual + Implementation Example in Unity
 -   [Procedural Content Generation Wiki](http://pcg.wikidot.com/) - Wiki everything PCG related.
-
-I've decided to take things slower than the last Roblox project because this is much tougher conceptually rather than implementation-wise to grasp than Roblox grid sharding.
+-   [Roblox Terrain API](https://create.roblox.com/docs/reference/engine/classes/Terrain) - Instead of generating terrain with parts, I'll be using Roblox terrain tool to generate procedural geography.

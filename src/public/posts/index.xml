@@ -6,8 +6,23 @@
     <description>Recent content in Posts on WhoIsHMP</description>
     <generator>Hugo -- 0.136.5</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 14 Dec 2025 10:19:00 -0800</lastBuildDate>
+    <lastBuildDate>Wed, 17 Dec 2025 18:13:00 -0800</lastBuildDate>
     <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Procedural Terrain Generation In Roblox</title>
+      <link>http://localhost:1313/posts/procedural-terrain-generation-in-roblox/</link>
+      <pubDate>Wed, 17 Dec 2025 18:13:00 -0800</pubDate>
+      <guid>http://localhost:1313/posts/procedural-terrain-generation-in-roblox/</guid>
+      <description>&lt;div class=&#34;ox-hugo-toc toc&#34;&gt;
+&lt;div class=&#34;heading&#34;&gt;Table of Contents&lt;/div&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#resources-on-terrain-procedural-generation&#34;&gt;Resources On Terrain Procedural Generation&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;!--endtoc--&gt;
+&lt;p&gt;This is a blog post to document my learning and implementation of Procedurally generated terrain into my Roblox game. As well, specifically how I combine it with grid sharding. Right now the post is a commitment to learning stuff.&lt;/p&gt;
+&lt;p&gt;Procedural terrain generation is a way to implement a dynamic player environment alongside &lt;a href=&#34;http://localhost:1313/posts/roblox-grid-based-server-sharding-with-instancing/&#34;&gt;Grid-based server sharding&lt;/a&gt;. In this blog, I am going to showcase some of the math behind procedural generation as I also work on my &lt;a href=&#34;https://www.roblox.com/games/9588998913/Empire-Clash&#34;&gt;Roblox Empire&lt;/a&gt; Clash clone game.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Roblox Non-Layered Grid-Based Server Sharding</title>
       <link>http://localhost:1313/posts/roblox-grid-based-server-sharding-with-instancing/</link>
